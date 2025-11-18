@@ -2,32 +2,91 @@ Part 1: Theoretical Understanding (40%)
 1. Short Answer Questions
 
 Q1: Explain the primary differences between TensorFlow and PyTorch. When would you choose one over the other?
-**TensorFlow:**
+TensorFlow:
 - Static computation graphs (define-and-run)
 - Production-ready, excellent deployment tools
 - Strong industry adoption
 - Keras API for simplified development
 
-**PyTorch:**
+PyTorch:
 - Dynamic computation graphs (define-by-run)
 - More Pythonic, intuitive debugging
 - Preferred for research and prototyping
 - Faster iteration during development
 
-**When to choose:**
+When to choose:
 - TensorFlow: Production systems, mobile deployment, enterprise applications
 - PyTorch: Research projects, rapid prototyping, academic work
 
+
 Q2: Describe two use cases for Jupyter Notebooks in AI development.
+1. Exploratory Data Analysis: Interactive data visualization and statistical analysis
+2. Model Prototyping: Quick iteration and experimentation with different architectures
+3. Educational Demonstrations: Combining code, visualizations, and explanations
+4. Collaborative Research: Sharing reproducible experiments with colleagues
+
 
 Q3: How does spaCy enhance NLP tasks compared to basic Python string operations?
+Basic String Operations:
+- Simple pattern matching
+- Limited to exact string matches
+- No linguistic understanding
+
+spaCy Advantages:
+- Linguistic intelligence (understanding grammar, syntax)
+- Named Entity Recognition (identify people, organizations, locations)
+- Dependency parsing (understanding relationships between words)
+- Pre-trained models for multiple languages
+- Efficient processing of large text volumes
+
 
 2. Comparative Analysis
 
 Compare Scikit-learn and TensorFlow in terms of:
 
 Target applications (e.g., classical ML vs. deep learning).
+- Scikit-learn: Classical ML (SVMs, decision trees, clustering)
+- TensorFlow: Deep Learning (neural networks, computer vision, NLP)
+
 
 Ease of use for beginners.
+- Scikit-learn: Very easy, consistent API, minimal setup
+- TensorFlow: Steeper learning curve, but Keras API simplifies it
+
 
 Community support.
+- Scikit-learn: Excellent documentation, many examples
+- TensorFlow: Massive community, extensive tutorials, enterprise support
+
+
+Part 3: Ethics & Optimization
+Ethical Analysis
+
+Potential Biases Identified:
+
+MNIST Model:
+- Cultural bias: Handwriting styles vary across cultures
+- Age bias: Older vs younger handwriting patterns
+- Educational bias: Literacy levels affect digit writing
+
+Amazon Reviews Model:
+- Language bias: English-only analysis excludes non-English speakers
+- Product bias: Tech products overrepresented
+- Geographic bias: Western consumer preferences dominant
+
+Mitigation Strategies:
+
+1. TensorFlow Fairness Indicators:
+   - Analyze performance across different demographic segments
+   - Identify accuracy disparities between groups
+   - Implement fairness constraints during training
+
+2. spaCy Rule-based Improvements:
+   - Add multilingual support
+   - Include diverse product categories
+   - Implement contextual sentiment analysis
+
+3. Data Augmentation:
+   - Include diverse handwriting samples
+   - Add reviews from various geographic regions
+   - Balance product categories
